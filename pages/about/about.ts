@@ -3,7 +3,8 @@ import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-about',
-  templateUrl: 'about.html'
+  templateUrl: 'about.html',
+  styleUrls: ['about.css']
 })
 export class AboutPage {
 height: number;
@@ -13,6 +14,7 @@ height: number;
   calorie: number;
   caloriemsg: string;
   lifestyle: string;
+  intake: number;
   constructor(public navCtrl: NavController) {
 
   }
@@ -27,22 +29,22 @@ this.calorie = (10*this.weight) + (6.25*this.height) - (5*this.age-161);
 this.caloriemsg = "Invalid";
 
 if (this.lifestyle = "1")  {
-this.calorie = ((10*this.weight) + ((6.25*this.height) - (5*this.age+5)*1.2));
+this.intake = (this.calorie*1.2);
 
 }else if (this.lifestyle = "2")  {
-this.calorie = ((10*this.weight) + ((6.25*this.height) - (5*this.age+5)*1.4));
+this.intake = (this.calorie*1.4);
 
 }else if (this.lifestyle = "3")  {
-this.calorie = ((10*this.weight) + ((6.25*this.height) - (5*this.age+5)*1.6));
+this.intake = (this.calorie*1.6);
 
 }else if (this.lifestyle = "4")  {
-this.calorie = ((10*this.weight) + ((6.25*this.height) - (5*this.age+5))*1.75);
+this.intake = (this.calorie*1.75);
 
 }else if (this.lifestyle = "5")  {
-this.calorie = ((10*this.weight) + ((6.25*this.height) - (5*this.age+5))*2.0);
+this.intake = (this.calorie*2.0);
 
 }else if (this.lifestyle = "6")  {
-this.calorie = ((10*this.weight) + ((6.25*this.height) - (5*this.age+5))*2.3);
+this.intake = (this.calorie*2.3);
 
 }else {
 this.caloriemsg = "Invalid";
