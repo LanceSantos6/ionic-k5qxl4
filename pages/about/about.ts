@@ -27,7 +27,8 @@ this.calorie = (10*this.weight) + (6.25*this.height) - (5*this.age-161);
 
 }else {
 this.caloriemsg = "Invalid";
-
+}
+{
 if (this.lifestyle = "1")  {
 this.intake = (this.calorie*1.2);
 
