@@ -8,15 +8,16 @@ import { NavController } from 'ionic-angular';
   
 })
 export class HomePage {
-  height: number;
-  weight: number;
-  gender: string;
+  
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController) {}
 
-  }
-
-
+  
 }
+  
+
+
+
+
 
 

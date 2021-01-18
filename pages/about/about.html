@@ -1,11 +1,44 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Calorie Calculator
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+ <ion-item> 
+    <ion-label color="dark"> Gender: </ion-label>
+    <ion-select interface="popover" [(ngModel)]="gender">
+      <ion-option value="m">Male</ion-option>
+      <ion-option value="f">Female</ion-option>
+      </ion-select>
+    </ion-item>    
+    
+<ion-item>
+  <ion-label>Height in centimeter: </ion-label>
+    <ion-input type="number"></ion-input>
+    </ion-item>
 
+<ion-item>
+  <ion-label>Weight in kilogram: </ion-label>
+  <ion-input type="number"></ion-input>
+  </ion-item>  
+
+  <ion-item>
+      <ion-label>Age: </ion-label>
+      <ion-input type="number"></ion-input>
+      </ion-item>
+
+<ion-item>
+  <ion-label color="dark"> Activity Level: </ion-label>
+  <ion-select interface="popover" [(ngModel)]="lifestyle">
+    <ion-option value="1">Sedentary lifestyle (little or no exercise)</ion-option>
+    <ion-option value="2">Slightly active lifestyle (light exercise or sports 1-2 days/week)</ion-option>
+    <ion-option value="3">Moderately active lifestyle (moderate exercise or sports 2-3 days/week)</ion-option>
+    <ion-option value="4">Very active lifestyle (hard exercise or sports 4-5 days/week)</ion-option>
+    <ion-option value="5">Extra active lifestyle (very hard exercise, physical job or sports 6-7 days/week)</ion-option>
+    <ion-option value="6">Professional athlete</ion-option>
+    </ion-select>
+    </ion-item>
 </ion-content>
