@@ -20,10 +20,10 @@ height: number;
   }
 computecalorie() {
 if (this.gender == "m")  {
-this.calorie = (10*this.weight) + (6.25*this.height) - (5*this.age+5);
+this.calorie = 10*this.weight + 6.25*this.height - 5 * this.age+5;
 
 }else if (this.gender == "f")  {
-this.calorie = (10*this.weight) + (6.25*this.height) - (5*this.age-161);
+this.calorie = 10*this.weight + 6.25*this.height - 5 * this.age-161;
 
 }else {
 this.caloriemsg = "Invalid";
