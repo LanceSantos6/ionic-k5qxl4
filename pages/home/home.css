@@ -8,11 +8,12 @@ h2 {
 p {
  color: #3B6609;
  text-align: justify;
- 
+}
  img {
   height: auto;
   width: auto;
   margin: auto;
   display: block;
-}
-}
+ }
+ 
+ 
